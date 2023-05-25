@@ -1,23 +1,18 @@
 {
-  "name": "graphql-mesh",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "mesh dev",
-    "build": "mesh build",
-    "start": "mesh start"
-  },
-  "dependencies": {
-    "@graphql-mesh/cli": "^0.82.35",
-    "@graphql-mesh/grpc": "^0.93.3",
-    "@graphql-mesh/plugin-http-details-extensions": "^0.93.1",
-    "@graphql-mesh/plugin-operation-field-permissions": "^0.93.1",
-    "@graphql-mesh/transform-filter-schema": "^0.93.2",
-    "@graphql-mesh/transform-naming-convention": "^0.93.1",
-    "@graphql-mesh/transform-rename": "^0.93.1",
-    "@graphql-mesh/transform-replace-field": "^0.93.1",
-    "@graphql-mesh/transform-type-merging": "^0.93.1",
-    "dotenv": "^16.0.3",
-    "graphql": "^16.6.0"
-  }
+	"name": "graphql-mesh",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "mesh dev",
+		"build": "mesh build",
+		"start": "mesh start"
+	},
+	"dependencies": {
+		"@graphql-mesh/cli": "^0.82.13",
+		"@graphql-mesh/grpc": "^0.29.2",
+		"@graphql-mesh/transform-naming-convention": "^0.13.15",
+		"@graphql-mesh/transform-rename": "^0.14.15",
+		"dotenv": "^16.0.3",
+		"graphql": "^16.6.0"
+	}
 }
