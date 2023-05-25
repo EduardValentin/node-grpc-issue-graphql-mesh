@@ -1,0 +1,37 @@
+sources:
+  - name: example
+    handler:
+      grpc:
+        endpoint: localhost:50051
+        source:
+          file: ../protobuf/service.proto
+
+
+transforms:
+  - namingConvention:
+      typeNames: camelCase
+      fieldNames: camelCase
+      fieldArgumentNames: camelCase
+  - rename:
+      renames:
+        - from:
+            field: comExample
+            type: Mutation
+          to:
+            field: api
+            type: Mutation
+          useRegExpForTypes: true
+          useRegExpForFields: true
+        - from:
+            field: comExample
+            type: Query
+          to:
+            field: api
+            type: Query
+          useRegExpForTypes: true
+          useRegExpForFields: true
+        - from:
+            type: comExample
+          to:
+            type: ''
+          useRegExpForTypes: true
